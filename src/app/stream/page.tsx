@@ -18,7 +18,7 @@ export default function StreamPage() {
     const remoteVideosRef = useRef<Map<string, HTMLVideoElement>>(new Map());
 
     useEffect(() => {
-        const socketConnection = io('http://localhost:3000');
+        const socketConnection = io('https://webrtc-hls-stream.fly.dev');
         setSocket(socketConnection);
 
         socketConnection.on('connect', () => {

@@ -8,7 +8,7 @@ import fs from 'fs';
 import path from 'path';
 
 const dev = process.env.NODE_ENV !== 'production';
-const hostname = 'localhost';
+const hostname = 'webrtc-hls-stream.fly.dev';
 const port = 3000;
 
 const app = next({ dev, hostname, port });
